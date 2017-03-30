@@ -43,14 +43,12 @@ function createAccount(){
     // Deposit Funds
 function outDep(){
     var num = parseInt(document.getElementById("per1").value);
-    var a2d = document.getElementById("per2").value;
     console.log("\ninside outDep ");
-    // console.log(typeof a2d);
-    var holder = dataBase[a2d]();
+    console.log(typeof num);
+    var holder = dataBase.one();
     console.log(holder);
-
     console.log("Balance: " + holder.balance );
-    
+
     holder.balance += num;
     console.log("Balance: " + holder.balance );
 }
@@ -58,7 +56,6 @@ function outDep(){
 
     // Display information on HTML
 function display(){
-
     // Creating new HTML Paragrap with specific text and color
     var holder = dataBase.one();
     var new_P = document.createElement("p");
