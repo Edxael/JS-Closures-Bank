@@ -18,7 +18,7 @@
     <h3>Creating Deposit</h3>
     Account to Deposit:.....<input type="text" id="per2"><br><br>
     Amount to Deposit:......<input type="text" id="per1"><br><br>
-    <input type="button" id="deposit-button" value="Deposit" onclick="outDep()" > <br><br>
+    <input type="button" id="deposit-button" value="Deposit" onclick="outDep()" > <br>
 
 
     <p>- - - - - - - - - - - - - - - - - - - - - - - </p>
@@ -32,7 +32,30 @@
             <p>Account Information</p>
     </div>
 
+    <p>- - - - - - - - - - - - - - - - - - - - - - - </p>
 
+    <h3>Account to Find</h3>
+    Accout to Find:.....<input type="text" id="acc2find"><br><br>
+    <input type="button" id="Search-button" value="Search Account" onclick="search()" > <br><br>
+
+
+    <div id="div-search">
+            <p>Account Information</p>
+    </div>
+    <br>
+
+    <p>- - - - - - - - - - - - - - - - - - - - - - - </p>
+
+    <h3>Log In</h3>
+
+    Accout Username:.....<input type="text" id="accUser">
+    Accout Password:.....<input type="text" id="accPass">
+    <button type="submit" onclick="logIn()">Submit</button>
+
+    <p>- - - - - - - - - - - - - - - - - - - - - - - </p>
+
+
+    <!-- ----------------------------------------------------------- -->
     <script type="text/javascript" src="code.js"></script>
 </body>
 </html>

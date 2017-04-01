@@ -40,19 +40,30 @@ function createAccount(){
 }
 
 
+
+
+
+
+
+
+
+
     // Deposit Funds
 function outDep(){
     var num = parseInt(document.getElementById("per1").value);
     var a2d = document.getElementById("per2").value;
     console.log("\ninside outDep ");
-    // console.log(typeof a2d);
+    console.log(typeof a2d);
     var holder = dataBase[a2d]();
     console.log(holder);
 
     console.log("Balance: " + holder.balance );
-    
+
     holder.balance += num;
     console.log("Balance: " + holder.balance );
+
+    document.getElementById("per1").value = "";
+    document.getElementById("per2").value = "";
 }
 
 
@@ -60,46 +71,32 @@ function outDep(){
 function display(){
 
     // Creating new HTML Paragrap with specific text and color
-    var holder = dataBase.one();
+    var a2d = document.getElementById("acc2disp").value;
+    var holder2 = dataBase[a2d]();
     var new_P = document.createElement("p");
-    new_P.innerText = ("Balance: " + holder.balance );
+    new_P.innerText = ("Balance: " + holder2.balance );
 
     var div1 = document.getElementById("div-p");
     div1.insertBefore(new_P, div1.childNodes[0]);
 
+    document.getElementById("acc2disp").value = "";
 }
 
 
+function logIn(){
+    console.log("Routing");
+
+    if((document.getElementById("accUser").value === "user") && (document.getElementById("accPass").value === "abc") ){
+        console.log("inside If");
+        window.location = "in.html";
+    }else {
+        console.log("Naranjas");
+        alert("Username or Password incorrect.");
+    }
 
 
+}
 
-
-
-
-
-// function createAccount(){
-//     console.log("Creating Account:");
-//     dataBase[document.getElementById("in-accn").value] = new bank(document.getElementById("in-accn").value,  document.getElementById("in-name").value,  document.getElementById("in-phon").value,  document.getElementById("in-bala").value  );
-//     console.log(dataBase);
-//
-//     document.getElementById("in-accn").value = "";
-// }
-
-
-
-
-
-// var alex = new bank("Alex", 123);
-//
-// function outDep(){
-//     console.log("inside outDep \n");
-//
-//     var holder = alex();
-//     console.log("\nBefore Function: ");
-//     console.log(holder.balance );
-//
-//     holder.dep1(5);
-//
-//     console.log("\nAftter Function: ");
-//     console.log(holder.balance);
-// }
+function logOut() {
+    window.location = "index.html";
+}

@@ -1,0 +1,99 @@
+body{
+    background-color: rgb(142, 237, 223);
+    padding: 55px;
+}
+
+.container{
+    /*width: 100%;*/
+    background-color: rgba(254, 254, 254, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 81vh;
+    border: 2px solid white;
+    padding: 25px;
+}
+
+.bank-pic{
+    height: 50px;
+    width: 50px;
+}
+
+
+
+
+
+
+
+/*---------------- LOG AREA -------------------------------------------*/
+
+
+.log-area{
+    width: 600px;
+    border: 2px solid rgb(83, 126, 222);
+    background-color: rgba(83, 126, 222, 0.5);
+    display: flex;
+    flex-direction: column;
+    padding: 0px 25px;
+}
+
+h1{
+    margin: 15px 0px 30px 0px;
+}
+
+
+.p-log{
+    font-weight: bold;
+    /*margin: 0px 0px 4px -65px;*/
+}
+
+.log-input{
+    height: 10%;
+    width: 50%;
+    /*margin: 0px auto;
+    display: block;*/
+    background-color: rgb(157, 180, 231);
+}
+
+.log-button{
+    height: 10%;
+    width: 25%;
+    background-color: rgb(105, 142, 226);
+    /*margin: 0px auto;
+    display: block;*/
+}
+.log-button:hover{
+    background-color: rgb(56, 114, 245);
+}
+
+
+
+
+
+
+
+/*-----------  BOTTOM  --------------*/
+
+.bottom-bar{
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.rifle{
+    width: 50px;
+    height: 50px;
+    margin: 0 5px 0 15px;
+}
+
+.icon{
+    width: 40px;
+    height: 40px;
+    margin: 7px 2px 0 2px;
+}
+
+.name{
+    font-size: 20px;
+    margin: 14px 1px 0 1px;
+}

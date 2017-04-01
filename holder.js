@@ -43,27 +43,35 @@ function createAccount(){
     // Deposit Funds
 function outDep(){
     var num = parseInt(document.getElementById("per1").value);
+    var a2d = document.getElementById("per2").value;
     console.log("\ninside outDep ");
-    console.log(typeof num);
-    var holder = dataBase.one();
+    console.log(typeof a2d);
+    var holder = dataBase[a2d]();
     console.log(holder);
+
     console.log("Balance: " + holder.balance );
 
     holder.balance += num;
     console.log("Balance: " + holder.balance );
+
+    document.getElementById("per1").value = "";
+    document.getElementById("per2").value = "";
 }
 
 
     // Display information on HTML
 function display(){
+
     // Creating new HTML Paragrap with specific text and color
-    var holder = dataBase.one();
+    var a2d = document.getElementById("acc2disp").value;
+    var holder2 = dataBase[a2d]();
     var new_P = document.createElement("p");
-    new_P.innerText = ("Balance: " + holder.balance );
+    new_P.innerText = ("Balance: " + holder2.balance );
 
     var div1 = document.getElementById("div-p");
     div1.insertBefore(new_P, div1.childNodes[0]);
 
+    document.getElementById("acc2disp").value = "";
 }
 
 
