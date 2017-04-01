@@ -83,20 +83,8 @@ function display(){
 }
 
 
-function logIn(){
-    console.log("Routing");
-
-    if((document.getElementById("accUser").value === "user") && (document.getElementById("accPass").value === "abc") ){
-        console.log("inside If");
-        window.location = "in.html";
-    }else {
-        console.log("Naranjas");
-        alert("Username or Password incorrect.");
-    }
-
-
-}
 
 function logOut() {
+    console.log("Inside of logOut()");
     window.location = "index.html";
 }
