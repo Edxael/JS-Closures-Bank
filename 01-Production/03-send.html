@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Century Bank</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="top-bar trans">
+        <div><img class="logoT" src="IMG/logo1.png" alt="Y la Pic"></div>
+        <div><img class="titleT" src="IMG/title1.png" alt="Y la Pic"></div>
+        <div class="profile">
+
+
+            <div class="r-prof">
+                <!-- <div><img class="foto" src="http://placehold.it/80x80" alt="Y la Pic"></div> -->
+                <div><img class="foto" src="IMG/emp.jpg" alt="Y la Pic"></div>
+            </div>
+
+            <div class="r-prof">
+                <div class="f-name">James</div><br>
+                <div class="l-name">Johnson</div><br>
+                <!-- <div class="button"><button type="submit" onclick="logOut()">Log-Out</button></div> -->
+                <div class="button"><button class="" onclick="logOut()"> Log-Out</button></div>
+            </div>
+
+        </div>
+    </div>
+
+
+        <!-- ---------- Divide ------------ -->
+
+
+    <div class="center-bar">
+
+        <div class="left-side trans">
+            <a class="a-button" href="01-home.html">Home</a>
+            <a class="a-button" href="02-create.html">Manage Account</a>
+            <a class="a-button" href="03-send.html">Send Money to Mexico</a>
+            <a class="a-button" href="04-exchange.html">Currency Exchange</a>
+            <a class="a-button" href="05-loans.html">Loans</a>
+            <a class="a-button" href="06-training.html">Training</a>
+        </div>
+
+
+        <div class="right-side trans">
+
+            <h1>Mexico Money Transfer Services</h1>
+            <img class="mex-flag" src="IMG/mex2.png" alt="Yl Sol"> <br><br><br>
+
+
+        <div class="vid-box-2">
+            <h2>Transfer Information:</h2>
+
+            <label class="name1">Name of Recipient: </label><br>
+            <input class="create-input-1" type="text" id="trans-1"><br><br>
+
+            <label class="name1">Recipient's Phone Number: </label><br>
+            <input class="create-input-1" type="text" id="trans-2"><br><br>
+
+            <label class="name1">Amount to Transfer: </label><br>
+            <input class="create-input-1" type="text" id="trans-3"><br><br>
+
+            <input class="crate-button-2" type="button" id="disp-button" value="Make Transfer" onclick="transfer()" > <br><br><br>
+
+            <p class="acc-info-title" >Transfer Details:</p>
+            <div class="trans2" id="div-p">
+            </div>
+
+        </div>
+
+
+        </div>
+
+    </div>
+
+
+            <!-- ---------- Divide ------------ -->
+
+
+    <div class="bottom-bar trans">
+        <div><img class="rifle" src="IMG/1erlog.png" alt="??"></div>
+        <div class="name">by: Edmundo Rubio</div>
+        <div><a href="https://github.com/Edxael" target="_blank"> <img class="icon" src="IMG/git3.png" alt="??"></a></div>
+        <div><a href="http://www.mycode.website/" target="_blank"> <img class="icon" src="IMG/portfolio1.png" alt="??"></a></div>
+    </div>
+    <script type="text/javascript" src="code.js">
+
+    </script>
+</body>
+</html>

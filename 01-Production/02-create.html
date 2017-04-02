@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Century Bank</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="top-bar trans">
+        <div><img class="logoT" src="IMG/logo1.png" alt="Y la Pic"></div>
+        <div><img class="titleT" src="IMG/title1.png" alt="Y la Pic"></div>
+        <div class="profile">
+
+
+            <div class="r-prof">
+                <div><img class="foto" src="IMG/emp.jpg" alt="Y la Pic"></div>
+            </div>
+
+            <div class="r-prof">
+                <div class="f-name">James</div><br>
+                <div class="l-name">Johnson</div><br>
+                <div class="button"><button class="" onclick="logOut()"> Log-Out</button></div>
+            </div>
+
+        </div>
+    </div>
+
+
+        <!-- ---------- Divide ------------ -->
+
+
+    <div class="center-bar">
+
+        <div class="left-side trans">
+            <a class="a-button" href="01-home.html">Home</a>
+            <a class="a-button" href="#">Manage Account</a>
+            <a class="a-button" href="03-send.html">Send Money to Mexico</a>
+            <a class="a-button" href="04-exchange.html">Currency Exchange</a>
+            <a class="a-button" href="05-loans.html">Loans</a>
+            <a class="a-button" href="06-training.html">Training</a>
+        </div>
+
+
+
+        <div class="right-side-2">
+
+            <div class="block2 trans">
+                <h1>Account Panel</h1>
+                <p>This is the MAIN page for this site, this is the one that holds the example for JS-Closures, all the other pages are jus frosting on the cake, and are not really relevant for closures, because all the other pages do not use closures,  the purpose why those were created are to provide a more realistic environment to this example.</p>
+                <p>NOTE: The Accounts in Memory will be erased if you clik the link to any other page of this site or anywere else.</p>
+            </div>
+
+            <div class="block2 trans">
+                <h1>Create Account:</h1>
+
+                <div class="vid-box-2">
+                <label class="name1">Account Number: </label><br>
+                <input class="create-input-1" type="text" id="1"><br><br>
+
+                <label class="name1">Account holder Name: </label><br>
+                <input class="create-input-1" type="text" id="2"><br><br>
+
+                <label class="name1">Account holder Phone Number: </label><br>
+                <input class="create-input-1" type="text" id="3"><br><br>
+
+                <input class="crate-button-2" type="button" id="create-button" value="Create Account" onclick="createAccount()" > <br>
+            </div>
+
+            </div>
+
+
+            <div class="block2 trans">
+                <h1>Deposit & Withdrawa</h1>
+
+
+                <div class="vid-box-2">
+                <label class="name1">Account to Deposit: </label><br>
+                <input class="create-input-1" type="text" id="per2"><br><br>
+
+                <label class="name1">Amount to Deposit: </label><br>
+                <input class="create-input-1" type="text" id="per1"><br><br>
+
+                <input class="crate-button-2" type="button" id="deposit-button" value="Deposit" onclick="outDep()" >
+                <input class="crate-button-2" type="button" id="withdraw-button" value="Withdrawal" onclick="outWD()" > <br>
+                </div>
+            </div>
+
+
+            <div class="block2 trans">
+                <h1>Account Information:</h1>
+
+                <div class="vid-box-2">
+                <label class="name1">Account to Display Info: </label><br>
+                <input class="create-input-1" type="text" id="acc2disp"><br><br>
+
+                <input class="crate-button-2" type="button" id="disp-button" value="Display Information" onclick="display()" > <br><br><br>
+
+                <p class="acc-info-title" >Account Information :</p>
+                <div class="trans1" id="div-p">
+
+                </div>
+                </div>
+
+            </div>
+
+
+            <div class="block2 trans">
+                <h1>Extra Instructions</h1>
+                <p>The way this page works: Open the developer tools and go to the CONSOLE, then populate the input boxes and see how the closures at work. </p>
+                <p>Path to Closures: "Object, chose the desired element / Scopes / 0: Closure (bank) / account".</p>
+                <p>There you will find all the Closures Variables.</p>
+                <p>You can also use the following Console Command: "dataBase;"</p>
+                <p>The Memory will be erased if you clik the link to any other page.</p>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+            <!-- ---------- Divide ------------ -->
+
+
+    <div class="bottom-bar trans">
+        <div><img class="rifle" src="IMG/1erlog.png" alt="??"></div>
+        <div class="name">by: Edmundo Rubio</div>
+        <div><a href="https://github.com/Edxael" target="_blank"> <img class="icon" src="IMG/git3.png" alt="??"></a></div>
+        <div><a href="http://www.mycode.website/" target="_blank"> <img class="icon" src="IMG/portfolio1.png" alt="??"></a></div>
+    </div>
+    <script type="text/javascript" src="code.js">
+
+    </script>
+</body>
+</html>

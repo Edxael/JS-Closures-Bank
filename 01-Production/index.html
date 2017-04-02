@@ -24,7 +24,7 @@
             <input class="log-input" type="password" id="in-pass" ><br>
 
             <button class="btn btn-default btn-lg" onclick="logIn()"><i class="fa fa-users" aria-hidden="true"></i> Log In</button>
-            <p>Username: Alex   ---    Password: bank123</p>
+            <p>Username: james   ---    Password: 123</p>
         </div>
 
 	</div>
@@ -43,14 +43,14 @@
         console.log("Routing");
         // alert("Hello again");
 
-        if((document.getElementById("in-user").value === "james") && (document.getElementById("in-pass").value === "bank123") ){
+        if((document.getElementById("in-user").value === "james") && (document.getElementById("in-pass").value === "123") ){
             console.log("inside If");
             window.location = "01-home.html";
             document.getElementById("in-user").value = "";
             document.getElementById("in-pass").value = "";
         }else {
             console.log("Naranjas");
-            alert("Please use:  Username: james & Password: bank123");
+            alert("Please use:  Username: james & Password: 123");
             document.getElementById("in-user").value = "";
             document.getElementById("in-pass").value = "";
         }

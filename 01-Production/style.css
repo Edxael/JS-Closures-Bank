@@ -15,6 +15,22 @@ body{
     border: 2px solid white;
 }
 
+.trans1{
+    /*background-color: rgba(254, 254, 254, 0.8);*/
+    /*background-color: rgb(235, 237, 135);*/
+    background-color: rgba(235, 237, 135, 0.8);
+    border: 2px solid black;
+    padding: 10px;
+    width: 95%;
+}
+
+.trans2{
+    /*background-color: rgba(254, 254, 254, 0.8);*/
+    background-color: rgba(235, 237, 135, 0.8);
+    border: 2px solid black;
+    padding: 10px;
+    width: 100%;
+}
 
 
 /*---------- Top Bar CSS -------------*/
@@ -96,6 +112,7 @@ body{
     text-decoration: none;
     color: black;
     font-family: impact;
+    border: 1px solid rgb(0, 117, 255);
 }
 .a-button:hover{
     background-color: rgb(53, 131, 235);
@@ -107,7 +124,20 @@ body{
 
 .right-side{
     width: 82vw;
-    padding: 0 20px 10px 20px;
+    padding: 0 20px 10px 25px;
+    /*padding: 0px 0px 20px 25px;*/
+
+        /*Add*/
+    overflow: auto;
+    height: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+}
+
+.right-side-2{
+    width: 82vw;
+    padding: 0 20px 10px 0px;
+    /*padding: 0px 0px 20px 25px;*/
 
         /*Add*/
     overflow: auto;
@@ -149,3 +179,144 @@ body{
 /*---------------------------------------
 **************************************
 --------------------------------------*/
+
+
+/*---------------------------------------
+**************************************
+--------------------------------------*/
+/*---------- 01-Home.html -------------*/
+
+.home-billete{
+    margin: 0px auto;
+    display: block;
+}
+
+
+/*---------------------------------------
+**************************************
+--------------------------------------*/
+
+
+/*---------------------------------------
+**************************************
+--------------------------------------*/
+/*---------- 02-create.html -------------*/
+
+.block2{
+    padding-bottom: 20px;
+    padding: 0px 0px 20px 25px;
+    margin: 0px 0px 15px 0px;
+}
+
+.name1{
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.create-input-1{
+    width: 300px;
+    height: 30px;
+    font-size: 28px;
+    background-color: rgb(203, 236, 110);
+    padding: 0 10px;
+}
+
+.crate-button-2{
+    width: 200px;
+    height: 50px;
+    margin-left: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    border: 1px solid black;
+    /*box-shadow: 10px 10px 10px #888888;*/
+    box-shadow: 7px 7px 7px rgb(0, 0, 0);
+    background-color: rgb(201, 242, 173);
+}
+
+.crate-button-2:hover{
+    background-color: rgb(161, 236, 110);
+}
+
+
+.acc-info-title{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(140, 53, 217);
+}
+
+
+
+
+/*---------------------------------------
+**************************************
+--------------------------------------*/
+
+
+/*---------------------------------------
+**************************************
+--------------------------------------*/
+/*---------- 03-send.html -------------*/
+
+.mex-flag{
+    width: 413px;
+    height: 215px;
+}
+
+
+
+
+/*---------------------------------------
+**************************************
+--------------------------------------*/
+
+
+/*---------------------------------------
+**************************************
+--------------------------------------*/
+/*---------- 06-training.html -------------*/
+
+.vid-box{
+    border: 2px solid black;
+    margin: 35px 0px 0px 45px;
+    padding: 20px;
+    width: 50%;
+    background-color: rgba(128, 247, 251, 0.3);
+    /*background-color: rgb(128, 247, 251);*/
+}
+
+.vid-h2{
+    text-align: center;
+}
+
+.vid-vid{
+    margin:0px auto;
+    display: block;
+    width: 560px;
+    height: 315px;
+}
+
+
+
+
+
+
+/*---------------------------------------
+**************************************
+--------------------------------------*/
+
+
+/*---------------------------------------
+**************************************
+--------------------------------------*/
+/*---------- 06-Loans.html -------------*/
+
+.vid-box-2{
+    border: 2px solid black;
+    margin: 35px 0px 0px 45px;
+    padding: 40px;
+    /*width: 10%;*/
+    background-color: rgba(128, 247, 251, 0.3);
+    display: table;
+    /*background-color: rgb(128, 247, 251);*/
+}
